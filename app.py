@@ -9,7 +9,7 @@ app = Flask(__name__)
 # Asigură-te că pe Render ai setat exact numele pe care îl folosești aici)
 # Dacă ai numit-o "GEMINI_API", schimbă rândul de mai jos în:
 # GEMINI_API_KEY = os.environ.get("GEMINI_API")
-GEMINI_API_KEY = os.environ.get("GEMINI_API")  # <-- verifică numele exact!
+GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")  # <-- verifică numele exact!
 
 if not GEMINI_API_KEY:
     raise RuntimeError("Lipsește variabila de mediu GEMINI_API_KEY (sau GEMINI_API)")
